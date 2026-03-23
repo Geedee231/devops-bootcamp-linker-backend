@@ -8,6 +8,7 @@ const secret = new TextEncoder().encode(
 export interface JwtPayload {
   id: string;
   email: string;
+  [key: string]: unknown;
 }
 
 @Injectable()
